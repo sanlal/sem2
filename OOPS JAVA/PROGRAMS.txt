@@ -1,0 +1,487 @@
+//Question1:
+//Program 1
+class First{
+      public static void main(String args[])
+       {
+          System.out.println("Welcome to JAVA");
+        }
+}
+
+
+
+
+
+//Question2:
+//Program 2
+//sum of two numbers
+import java.lang.*;
+class Sum{
+      public static void main(String args[])
+       {
+        int x,y;
+        x = 10;
+        y = 25;
+        int z= x+y;
+          System.out.print(z);
+        }
+}
+
+
+
+
+//Question3:
+//Program 3
+//print() and println()
+import java.lang.*;
+class Format{
+      public static void main(String args[])
+       {
+        int a=1,b=2,c=3,d=4;
+        System.out.print(a+"\t"+b);
+        System.out.println(b+"\n"+b);
+        System.out.print(":"+c);
+        System.out.println();
+        System.out.println("Hello\\Hi\""+d);
+        }
+}
+
+
+
+
+
+//Question4:
+
+//pre and post increment
+import java.lang.*;
+class PrePost{
+      public static void main(String args[])
+       {
+        int x=1;
+        System.out.println(x);
+        System.out.println(++x);
+        System.out.println(x);
+
+        int y=1
+        System.out.println(y);
+        System.out.println(y++);
+        System.out.println(y);
+
+        }
+}
+
+
+
+
+
+//Question5:
+//a=++b
+//what are the values of a and b
+import java.lang.*;
+class Format{
+      public static void main(String args[])
+       {
+        int a=1, b=2;
+        a=++b;
+        System.out.println(a);
+        System.out.println(b);
+        }
+}
+
+
+
+
+
+
+//Question 6:
+//BITWISE OPERATORS
+import java.lang.*;
+class Bits{
+      public static void main(String args[])
+       {
+        byte a=1, b=2;
+        System.out.println("~X= "+ (~x));
+        System.out.println("x & y= "+ (x&y));
+        System.out.println("x | y= "+ (x|y));
+        System.out.println("x ^ y= "+ (x^y));
+        System.out.println("x << y= "+ (x<<2));
+        System.out.println("x >> y= "+ (x>>2));
+        System.out.println("x >>> y= "+ (x>>>2));
+        }
+}
+
+
+
+//Question 7:
+//Write a program to test is a number is positive or negative
+import java.lang.*;
+class Bits{
+      public static void main(String args[])
+       {
+        int num = -5;
+        if(num==0)
+            System.out.println("Ït is zero");
+        else if(num>0)
+            System.out.println(num + "is positive");
+        else if(num<0)
+            System.out.println(num + "is negative");
+
+        }
+}
+
+
+
+
+
+//Question 8
+
+//Write a program to display numbers from 1 to 10
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int num = 1;
+        do{
+            System.out.println(num);
+            num++;
+        }while(num<=10)
+            
+
+        }
+}
+
+
+
+
+
+//Question 9
+//Write a program to display numbers from 1 to 10 using while loop
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int num = 1;
+        while(num<=10){
+            System.out.println(num);
+            num++;
+        }
+            
+
+        }
+}
+
+
+
+
+
+//Question 10
+//Write a program to display numbers from 1 to 10 using for loop
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+       for(int x=1;x<=10;x++){
+            System.out.println(x);
+        }
+        }
+}
+
+
+
+
+//Question 11
+//Write a program to display numbers from 1 to 10 using infinite for loop
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int x=1;
+       for( ; ;){
+            System.out.println(x);
+            x++;
+            if(x>10) break;
+        }
+        }
+}
+
+
+
+
+//Question 12
+/*Write a program to display stars in a triangular form-- 
+a single star in the first line, two stars in the second line, and so on.
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int r=5;
+       for(int i=1;i<=r;i++){
+         for(int st=1;st<=i;st++){
+            System.out.println("*");
+         }
+            System.out.println();
+        }
+        }
+}
+
+
+
+
+
+//Question 13
+/*Write a program to see the use of for-each loop and
+reterive the elements one by one from an array and display it
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+         int arr[] = {200,-2,44,99};
+         for(int i : arr){
+            System.out.println(i);
+        }
+        }
+}
+
+
+
+
+//Question 14
+/*Write a program for using switch statement to execute a particular task
+depending on color value
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+         char color='g';
+         switch(color)
+         {
+            case 'r':System.out.println("Red");
+            case 'g':System.out.println("Greeen");
+            case 'b':System.out.println("Blue");
+            case 'w':System.out.println("white");
+            default :System.out.println("No Color");
+
+         }
+        }
+}
+
+
+
+//Question 15
+/*Write a program to come out of switch block , after executing task
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+         char color='g';
+         switch(color)
+         {
+            case 'r':System.out.println("Red");
+            break;
+            case 'g':System.out.println("Greeen");
+            break;
+            case 'b':System.out.println("Blue");
+            break;
+            case 'w':System.out.println("white");
+            break;
+            default :System.out.println("No Color");
+
+         }
+        }
+}
+
+
+
+
+//Question 16
+/*Write a program to use break statement to go to the end of a block
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+         boolean x = true;
+
+         bl1:{
+            bl2:{
+                bl3:{
+                    System.out.println("Block3");
+                    if(x) break bl2;
+                }
+                System.out.println("Block2");
+            }
+            System.out.println("Block3");
+         }
+         System.out.println("Out of all Blocks");
+        }
+}
+
+
+
+
+//Question 17
+/*Write a program using for loop to display the numbers in descending order 
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+       for(int i=10; i>=1; i--){
+        System.out.print(i+" ");
+       }
+        }
+}
+
+
+
+
+
+//Question 18
+/*Write a program for using nested loops( to display i and j values)
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int i=1,j;
+       lp1: while(i<=3)
+       {
+        System.out.print(i);
+        lp2: for(j=1;j<=5; j++){
+            System.out.println("\t"+j);
+        }
+        i++;
+        System.out.println("-------------")
+       }
+     }
+}
+
+
+
+//Question 19
+/*Write a program to return a value from a method
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int res= Demo.myMethod(10);
+        System.out.println("Result= "+ res);
+     }
+     static int myMethod(int num)
+     {
+        return num*num;
+     }
+}
+
+
+
+//Question 20
+/*Write a program to return statement in main()
+*/
+import java.lang.*;
+class Demo{
+      public static void main(String args[])
+       {
+        int x=1;
+        Sysem.out.println("Before return");
+        if(x==1) return;
+        System.out.println("After return");
+       }
+}
+
+
+
+
+//Question 21
+/*To accept and display a character from the keyboard
+*/
+import java.lang.*;
+class Accept{
+      public static void main(String args[])throws IOException
+       {
+        BufferredReader br= new BufferredReader(new InputStreamReader(System.in));
+        System.out.print("Enter a character: ");
+        char ch= (char)br.read();
+        System.out.println("You entered: "+ ch);
+       }
+}
+
+
+
+//Question 22
+/*Accepting a string from the keyboard
+*/
+import java.lang.*;
+class Accept{
+      public static void main(String args[])throws IOException
+       {
+        BufferredReader br= new BufferredReader(new InputStreamReader(System.in));
+        System.out.print("Enter a name: ");
+        String name= br.readLine();
+        System.out.println("You entered: "+ name);
+       }
+}
+
+
+
+
+//Question 23
+/*Accepting an integer from the keyboard
+*/
+import java.lang.*;
+class Accept{
+      public static void main(String args[])throws IOException
+       {
+        BufferredReader br= new BufferredReader(new InputStreamReader(System.in));
+        System.out.print("Enter an int value: ");
+        int num= Integer.parseInt(br.readLine());
+        System.out.println("You entered: "+ num);
+       }
+}
+
+
+
+
+//Question 24
+/*Accepting a float number from the keyboard
+*/
+import java.lang.*;
+class Accept{
+      public static void main(String args[])throws IOException
+       {
+        BufferredReader br= new BufferredReader(new InputStreamReader(System.in));
+        System.out.print("Enter an int value: ");
+        float num= Float.parseFloat(br.readLine());
+        System.out.println("You entered: "+ num);
+       }
+}
+
+
+
+
+//Question 25
+/*Accepting a float number from the keyboard
+*/
+import java.lang.*;
+class Accept{
+      public static void main(String args[])throws IOException
+       {
+        BufferredReader br= new BufferredReader(new InputStreamReader(System.in));
+        System.out.print("Enter an int value: ");
+        double num= Double.parseDouble(br.readLine());
+        System.out.println("You entered: "+ num);
+
+        byte n= Byte.parseByte(br.readLine());
+        System.out.println("You entered: "+ n);
+
+        long num= Long.parseLong(br.readLine());
+        System.out.println("You entered: "+ num);
+
+        boolean num= Boolean.parseBoolean(br.readLine());
+        System.out.println("You entered: "+ num);
+       }
+}

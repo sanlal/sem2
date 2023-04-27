@@ -1,0 +1,157 @@
+/* Q1 */
+
+create table instructor(
+      ID varchar2(10),
+      name varchar2(10),
+      dept_Name varchar(10), 
+      salary varchar2(10)
+);
+insert into instructor values('&ID','&name','&dept_Name','&salary');
+
+/*GROUP BY */
+select dept_name
+from instructor
+group by dept_name;
+
+
+/*ORDER BY */
+select SALARY
+from instructor
+order by salary ASC;
+
+/*WHERE */
+select SALARY
+from instructor
+where salary>=40000;
+
+
+select dept_name, COUNT(*)AS 
+from instructor
+group by dept_name;
+
+
+select salary, SUM(amount)AS total
+from instructor
+group by salary;
+
+
+
+select * from instructor;
+
+
+
+
+
+
+
+
+
+/* 
+DATE: 30/01/2023 
+GROUP BY, ORDERED BY, WHERE CLAUSE, FILTER, RETRIVE ROWS AND COLOUMNS, UNIQUE ROWS AND COLUMNS
+ */
+
+create table instructor(
+      ID varchar2(10),
+      name varchar2(10),
+      dept_Name varchar(10), 
+      salary varchar2(10)
+);
+insert into instructor values('&ID','&name','&dept_Name','&salary');
+
+UPDATE instructor
+SET salary_2nd = '2000'
+WHERE ID = 1;
+
+select * from instructor;
+
+
+
+alter table instructor
+add salary_2nd varchar2(10);
+
+add  age varchar2(10);
+
+
+
+/*GROUP BY */
+select dept_name
+from instructor
+group by dept_name;
+
+
+select dept_name, COUNT(*)AS 
+from instructor
+group by dept_name;
+
+
+/*sum of salary */
+select  SUM(salary)
+from instructor;
+
+
+/*Grouping similar salary*/
+select id, SUM(salary)AS total
+from instructor
+group by id;
+
+
+
+
+SELECT dept_name, name, MIN(age) as min_age
+FROM instructor
+GROUP BY dept_name, name;
+
+
+
+/*ORDER BY */
+select SALARY
+from instructor
+order by salary ASC;
+
+
+
+/*WHERE */
+select SALARY
+from instructor
+where salary>=40000;
+
+
+select id
+from instructor
+where id>=4;
+
+
+
+
+select * from instructor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Q2 */
+
+
+create table department_relation(dept_name varchar2(10),building varchar(10), budget varchar2(10));
+select * from department_relation;
+insert into department_relation values('&dept_name','&building','&budget');
+
+
+/*DATE: 30/01/2023 
+GROUP BY, ORDERED BY, WHERE CLAUSE, FILTER, RETRIVE ROWS AND COLOUMNS
+*/
+
+
