@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <div id="div1">
+    <p>
+      Hello World
+    </p>
+      <p id="p1">Dom is usefull</p>
+      <p id="p2">
+        Deomnstrates <b>document.body</b>property
+      </p>
+    </div>
+    <script>
+      var para=document.createElement("p");
+      var node = document.createTextNode("This is new");
+      para.appendChild(node);
+      var element = document.getElementById("div1");
+      var child = document.getElementById("p1");
+      element.alertChild(node);
+      //element.insertBefore(para,child);
+     // parent.removeChild(child);
+     //parent.replaceChild(para,child);
+     /*
+
+     */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+
+<!-- LOGIN FORM WITH ALERT * if data not enetered-->
+
+<html>
+  <head>
+    <style>
+      /* Styling for the form */
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      label {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      input[type="text"], input[type="password"] {
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: lightblue;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      /* Animation for the form */
+      .form-fade-in {
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form form-fade-in" action="welcome.html" method="get">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

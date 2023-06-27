@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <script src="Registration.js"></script>
+    <style>
+        label
+        {
+            color: rgb(204, 72, 105);
+            font-size: 20px;
+            font-family:Georgia;
+        }
+        #b1 ,#b2
+        {
+            margin: 5px;
+            
+            background-color: black;
+            border: solid black 4px;
+            border-radius: 10%;
+            color: white;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">STUDENT REGISTRATION FORM</h1>
+    <form method="post" >
+       
+           
+       <fieldset style="background-color: rgb(135, 235, 235);">
+        <legend>Basic Information</legend>
+        <table>
+        <tr>
+       <td> <label >First Name* </label></td>
+        <td>:<input type="text" name="fn"  id="fn"  ></td>
+       <td> <label>&nbsp; &nbsp; Middle Name:</label>
+        <input type="text" name="mn" id="mn"  >
+        </td>
+        <td> <label>&nbsp; &nbsp; Last Name:</label>
+            <input type="text" name="ln" id="ln"  >
+            </td>
+        </tr>
+        <tr>
+            <td> <label>Roll No* &nbsp; </label></td>
+              <td> : <input type="text" name="rn" id="rn"  ></td>
+        </tr>
+        <tr>
+            <td> <label>Email ID* &nbsp; </label></td>
+               <td>: <input type="text" name="email" id="email"  ></td>
+        </tr>
+
+        <tr>
+            <td> <label>phone No* &nbsp; </label></td>
+             <td> :  <input type="text" name="pn" id="pn"  ></td>
+        </tr>
+        <tr>
+            <td> <label>User ID* &nbsp; </label></td>
+            <td> : <input type="text" name="id" id="id"  ></td>
+        </tr>
+        <tr>
+            <td> <label>Enter Password* &nbsp; </label></td>
+            <td> : <input type="password" name="pass" id="pass"  ></td>
+        </tr>
+        <tr>
+            <td> <label>Re-Enter Password* &nbsp; </label></td>
+                <td>: <input type="password" name="repass" id="repass"  ></td>
+        </tr>
+
+        <tr>
+            <td> <label>Branch* &nbsp; </label></td>
+            <td> :  <select name="CSE" id="branch"  >
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MCA">MCA</option>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+            <td> <label>Year of Studying* &nbsp; </label></td>
+            <td>  : <select name="First" id="year"  >
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                    <option value="Four">Four</option>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Upload Photo* &nbsp; </label></td>
+                <td> :  <input type="file" >
+
+            </td>
+        </tr>
+    </table>
+       </fieldset>
+       <fieldset style="background-color: rgb(135, 235, 235);">
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td><label>Father Name*</label></td>
+                <td><input type="text" name="FatherName" id="fathername" > </td>
+                <td><label>Contact No*</label></td>
+                <td><input type="text" name="contactf" id="fathercontact"  > </td>
+                
+            </tr>
+            <tr>
+                <td><label>Mother Name*</label></td>
+                <td><input type="text" name="MotherName" id="mothername" > </td>
+                <td><label>Contact No*</label></td>
+                <td><input type="text" name="contactm" id="mothercontact"  > </td>
+                
+            </tr>
+            <tr>
+                <td><label>Date of Birth*</label></td>
+                <td><input type="date" id="dob" ></td>
+            </tr>
+
+            <tr>
+                <td><label>Aadhar no*</label></td>
+                <td><input type="text" name="aadhar" id="aadhar" ></td>
+            </tr>
+
+
+        </table>
+       </fieldset>
+       <fieldset style="background-color: rgb(135, 235, 235);">
+        <legend>|Address</legend>
+        <table>
+
+            <tr>
+                <td>
+                    <label>Adress1* :</label>
+                </td>
+                <td><textarea rows="5" name="a1" id="address1" ></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Adress2* :</label>
+                </td>
+                <td><textarea rows="5" name="a2" id="address2" ></textarea></td>
+            </tr>
+        </table>
+       </fieldset>
+       <center>
+       <input type="submit" Value="Register" id="b1" onclick="fun()" >
+       <input type="reset" value="Reset" id="b2">
+    </center>
+       
+    
+     
+
+
+    </form>
+</body>
+</html>

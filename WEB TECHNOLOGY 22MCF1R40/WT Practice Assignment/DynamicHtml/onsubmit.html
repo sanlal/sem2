@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example of ONSUBMIT event</title>
+  <script>
+    function change(){
+      var img = document.getElementById("image");
+      img.src = "https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg.jpg";
+    }
+    document.getElementById("image").onclick=change;
+  </script>
+</head>
+<body>
+  <font color ="blue">
+    <p id="demo">this text changes color when the page loading.</p>
+  </font>
+</body>
+</html>

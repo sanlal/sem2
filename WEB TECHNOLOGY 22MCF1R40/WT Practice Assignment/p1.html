@@ -1,0 +1,38 @@
+<html>
+<frameset rows="100,*,100">
+     <frame src="hi.html">
+    <frameset cols="10%,10%,*">
+ 
+     <frame src="f1.html">
+     <frame src="f2.html">
+    <frame src="Fi.html">
+    </frameset>
+    <frame src="f3.html">
+ 
+</frameset>
+
+<body>
+ <form>
+   First Name : <input type="fname"> <br>
+   Last Name  : <input type="lname"> <br>
+   Date : <input type="date" name="date"><br>
+  <label for="Country Code" > Country Code:</label>
+ <input type="text" name="country_code" pattern="[A-Za-z]{3}" ><br>
+   <button>Submit</button>
+ </form>
+
+<form>
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" >
+</form><br>
+
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+</body>
+</html>
