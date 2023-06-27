@@ -1,0 +1,29 @@
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
+
+
+
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
+
+
+
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
+
+
+
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
+
+
+What is zipping in Java?
+Image result for java zipping
+Creating a zip archive for a single file is very easy, we need to create a ZipOutputStream object from the FileOutputStream object of destination file. Then we add a new ZipEntry to the ZipOutputStream and use FileInputStream to read the source file to ZipOutputStream object.
