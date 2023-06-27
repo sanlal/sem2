@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>International Seminar Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>International Seminar Registration</h1>
+	</header>
+	<main>
+		<h2>Registration Form</h2>
+		<form>
+			<fieldset>
+				<legend>Participant Information</legend>
+				<label for="name">Full Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="country">Country:</label>
+				<input type="text" id="country" name="country" required>
+
+				<label for="occupation">Occupation:</label>
+				<select id="occupation" name="occupation">
+					<option value="student">Student</option>
+					<option value="faculty">Faculty Member</option>
+					<option value="professional">Professional</option>
+					<option value="company">Company/Firm Representative</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Registration Details</legend>
+				<label for="currency">Registration Fee Currency:</label>
+				<select id="currency" name="currency">
+					<option value="rupees">Rupees</option>
+					<option value="dollar">Dollar</option>
+				</select>
+
+				<label for="payment-method">Payment Method:</label>
+				<select id="payment-method" name="payment-method">
+					<option value="credit-card">Credit Card</option>
+					<option value="debit-card">Debit Card</option>
+					<option value="demand-draft">Demand Draft</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Accommodation Details</legend>
+				<label for="hotel">Preferred Hotel:</label>
+				<select id="hotel" name="hotel">
+					<option value="hotel-a">Hotel A</option>
+					<option value="hotel-b">Hotel B</option>
+					<option value="hotel-c">Hotel C</option>
+					<option value="hotel-d">Hotel D</option>
+				</select>
+
+				<label for="services">Required Services:</label>
+				<ul id="services">
+					<li> <input type="checkbox" name="services" value="wifi" checked> Wi-Fi</li>
+					<li><input type="checkbox" name="services" value="breakfast"> Breakfast</li>
+					<li><input type="checkbox" name="services" value="room-service"> Room Service</li>
+					<li><input type="checkbox" name="services" value="gym"> Gym</li>
+					<li><input type="checkbox" name="services" value="swimming-pool"> Swimming Pool</li>
+				</ul>
+			</fieldset>
+
+			<input type="submit" value="Register">
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 International Seminar. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
