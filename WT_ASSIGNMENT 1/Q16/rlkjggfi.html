@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Count</title>
+</head>
+<body>
+	<script>
+		// Read the text input from the user
+		var text = prompt("Enter some text:");
+
+		// Split the text into an array of words
+		var words = text.split(/\W+/);
+
+		// Count the occurrences and lengths of each word
+		var wordCount = {};
+		var wordLengths = {};
+		for (var i = 0; i < words.length; i++) {
+			var word = words[i].toLowerCase();
+			if (wordCount[word] === undefined) {
+				wordCount[word] = 1;
+				wordLengths[word] = word.length;
+			} else {
+				wordCount[word]++;
+			}
+		}
+
+		// Output the word count and length table
+		document.write("<h1>Word Count</h1>");
+		document.write("<table>");
+		document.write("<tr><th>Word</th><th>Count</th><th>Length</th></tr>");
+		for (var word in wordCount) {
+			document.write("<tr><td>" + word + "</td><td>" + wordCount[word] + "</td><td>" + wordLengths[word] + "</td></tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Squares and Cubes Table</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Number</th>
+			<th>Square</th>
+			<th>Cube</th>
+		</tr>
+		<script>
+			for (var i = 0; i <= 10; i++) {
+				var square = i * i;
+				var cube = i * i * i;
+				document.write("<tr>");
+				document.write("<td>" + i + "</td>");
+				document.write("<td>" + square + "</td>");
+				document.write("<td>" + cube + "</td>");
+				document.write("</tr>");
+			}
+		</script>
+	</table>
+</body>
+</html>

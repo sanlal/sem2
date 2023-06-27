@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gross Pay Calculator</title>
+</head>
+<body>
+	<script>
+		var employeeData = [];
+
+		// Input employee data using prompt dialogs
+		for (var i = 1; i <= 3; i++) {
+			var name = prompt("Enter employee " + i + " name:");
+			var hours = parseFloat(prompt("Enter " + name + "'s hours worked last week:"));
+			var rate = parseFloat(prompt("Enter " + name + "'s hourly rate:"));
+
+			employeeData.push({
+				name: name,
+				hours: hours,
+				rate: rate
+			});
+		}
+
+		// Calculate and output gross pay for each employee
+		document.write("<h1>Gross Pay</h1>");
+		document.write("<table>");
+		document.write("<tr><th>Name</th><th>Hours Worked</th><th>Hourly Rate</th><th>Gross Pay</th></tr>");
+		for (var i = 0; i < employeeData.length; i++) {
+			var employee = employeeData[i];
+			var grossPay;
+			if (employee.hours > 40) {
+				grossPay = 40 * employee.rate + (employee.hours - 40) * employee.rate * 1.5;
+			} else {
+				grossPay = employee.hours * employee.rate;
+			}
+			document.write("<tr><td>" + employee.name + "</td><td>" + employee.hours + "</td><td>" + employee.rate + "</td><td>" + grossPay + "</td></tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>

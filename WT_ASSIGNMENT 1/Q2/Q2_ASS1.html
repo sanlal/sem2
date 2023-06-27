@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration form</title>
+
+  <style>
+    body {
+      background-color: rgb(158, 187, 218);
+    }
+
+    fieldset {
+      font-size: 20px;
+      color: white;
+    }
+
+    th {
+      font-size: 40px;
+      color: yellow;
+    }
+
+    legend {
+      font-size: 30px;
+      color: orangered;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <table align="center">
+    <tr>
+      <th>Student Registration Form</th>
+    </tr>
+  </table>
+
+  <form>
+    <fieldset>
+      <legend>Basic Information:</legend>
+
+
+      <label>First Name* &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:</label>
+          <input type="text" placeholder="Enter your first name" id="first-name" required>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+
+      <label>Middle Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Middle name" size="20">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+
+      <label>Last Name* :</label>
+      <input type="text" id="name" name="name" placeholder="Enter your last name" size="20" required><br><br>
+
+
+      <label>Roll No* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;:</label>
+      <input type="roll" id="roll" name="roll" placeholder="Enter Roll No" size="20" required><br><br>
+
+      <label>E-mail* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+      <input type="email" id="email" name="myGeeks" pattern="[a-z0-9] + @ [a-z] + \. [a-z]"
+        placeholder="It should contain @ and ." maxlength="20" size="20" ><br><br>
+
+      <label>Phone* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;:</label>
+      <input type="tel" size="3" placeholder="+91">
+      <input type="text" id="name" name="name" placeholder="Only 10 digits" pattern="[0-9]" maxlength="10" size="10" required><br><br>
+
+      <label>User_Id* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;:</label>
+      <input type="user" id="user" name="user" placeholder="Enter User_Id" maxlength="20" size="20" required><br><br>
+
+      <label>Enter Password*&emsp;&emsp;&emsp;&nbsp;&nbsp; :</label>
+      <input type="password" id="name" name="name" pattern="[a-z0-9] + @ [a-z0-9]" minlength="8" maxlength="20"
+        size="20" placeholder="Enter Password" required>
+      <input type="hidden"><br><br>
+
+
+      <label>Re-Enter Password*&emsp;&emsp;&nbsp;&nbsp;: </label>
+      <input type="password" id="name" name="name" pattern="[a-z0-9] + @ [a-z0-9]" minlength="8" maxlength="20"
+        size="20" placeholder="Enter Password" required>
+      <input type="hidden"><br><br>
+
+
+      <label>Branch*&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; :</label>
+      <select name="name" required>
+        <option value="1">Select Your Branch: </option>
+        <option value="2">MCA </option>
+        <option value="3">B.Sc</option>
+        <option value="4">BCA</option>
+        <option value="5">B.Com</option>
+        <option value="6">CSE</option>
+      </select><br><br>
+
+
+      <label>Year Of Studying*&emsp;&emsp;&emsp; :</label>
+      <select name="name" required>
+        <option value="1">Select Year: </option>
+        <option value="2">First </option>
+        <option value="3">Second</option>
+        <option value="4">Third</option>
+        <option value="5">Fourth</option>
+      </select><br><br>
+
+
+      <label>Upload Photo*&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: </label>
+      <input type="file" required><br><br>
+
+
+    </fieldset>
+    <br><br>
+
+
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+
+      <label>Father Name* &emsp;&nbsp;:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Father name" size="20" required>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+
+      <label>Contact No* &emsp;:</label>
+      <input type="tel" size="5" placeholder="+91">
+      <input type="text" id="name" name="name" placeholder="Only 10 digits are allowed" pattern="[0-9]" 
+      maxlength="10" size="20"><br><br>
+
+
+      <label>Mother Name* &emsp;:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Mother name" size="20" required>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+
+      <label>Contact No* &emsp;:</label>
+      <input type="tel" size="5" placeholder="+91">
+      <input type="text" id="name" name="name" placeholder="Only 10 digits are allowed" pattern="[0-9]" 
+      maxlength="10"size="20"><br><br>
+
+    </fieldset>
+    <br><br>
+
+
+
+
+    <fieldset>
+      <legend>Address</legend>
+
+      <table>
+        <tr>
+          <td>Address1* :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </td>
+          <td>
+            <!-- <label>Address:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label> -->
+            <textarea id="address" name="address" rows="10" cols="20" required> </textarea><br><br>
+          </td>
+        </tr>
+      </table>
+
+
+      <table>
+        <tr>
+          <td>Address2 :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; </td>
+          <td>
+            <!-- <label>Address:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label> -->
+            <textarea id="address" name="address" rows="10" cols="20"> </textarea><br><br>
+          </td>
+        </tr>
+      </table>
+
+
+    </fieldset>
+    <br><br>
+
+
+
+    <table align="center">
+      <tr>
+        <td rowspan="4" colspan="2" align="center"><input type="Submit" value="Register"></td>
+        <td colspan="2" align="center"><input type="Reset" value="Reset"></td>
+
+      </tr>
+    </table>
+
+
+  </form>
+</body>
+
+</html>
